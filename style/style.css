@@ -28,7 +28,7 @@ body{
 	left: 15px;
 }
 #conteneur{
-	background-color: pink;
+	background-color: black;
 }
 section{
 	width: 100vw;
@@ -57,9 +57,9 @@ section{
 	font-size: 3em;
 }
 #section1{
-	background-color: #fcd5ce;
+	background-color:#fcd5ce;
 	/*background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255, 255, 255, 0) 100%);*/
-
+	color: black;
 }
 
 #section2,#section3,#section4,#section5{ /*, = +*/
@@ -81,9 +81,10 @@ section{
 
 h1{
 	margin-bottom: 5vh;
+
 }
 #presentation{
-	width: 52%;
+	width: 40%;
 	/*border: 1px solid red;*/ /*repère*/
 	/*font-family: 'Dela Gothic One', cursive;*//*police à changer si police différente*/
 	font-family: 'Righteous', cursive;
@@ -98,6 +99,7 @@ h1{
 #presentation p{
 	font-size: 1.3em;
 	line-height: 1.4em; /*interlignage*/
+	color:black;
 }
 
 .bleu{
@@ -137,11 +139,13 @@ h1{
 	margin: 50px auto;
 	/*font-family: 'Dela Gothic One', cursive;*/
 	font-family: 'Righteous', cursive;
+
 }
 
 nav ul{
 	display: flex;
-	justify-content: space-around;	
+	justify-content: space-around;
+
 }
 
 nav ul li{
@@ -152,6 +156,10 @@ nav ul li{
 	height: 20px;
 	border-radius: 15px;
 	padding: 5px 12px;
+}
+
+nav ul a{
+	text-decoration: none;
 }
 
 /*li{
@@ -169,17 +177,22 @@ h2{
 	position: relative;
 }
 
+h3{
+	font-family: 'Syncopate', sans-serif;
+}
+
 #numerique{
 	margin: 20vh auto 0px;
 }
 
 #hybride{
-		margin: 20vh auto 0px;
+	margin: 20vh auto 0px;
 }
-/*
+
 #photographies{
+	margin: 20vh auto 0px;
 }
-*/
+
 
 .projets{
 	width: 1000px;
@@ -213,8 +226,8 @@ h2{
 	text-align: center;
 	top:0px;
 	line-height: 3em;
-	background-color: black;
-
+	/*background-color: black;
+*/
 }
 
 .projets figure:hover img{
@@ -222,7 +235,7 @@ h2{
 }
 
 .projets figure img{
-		transition: 1s ease all;
+	transition: 1s ease all;
 	width: 100%;
 	position: relative;
 	/*height: 500px;*/
