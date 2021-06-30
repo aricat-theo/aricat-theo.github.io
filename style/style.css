@@ -41,13 +41,21 @@ section{
 
 .fleche{
 	position: absolute;
-	bottom: 15px;
+	bottom: 25px;
 	left: 45vw;
 	color: white;
 
 
 }
+.fleche a{
+	text-decoration: none;
+}
 
+.iconefleche{
+	border: 0px solid black;
+	color: white;
+	font-size: 3em;
+}
 #section1{
 	background-color: #fcd5ce;
 	/*background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255, 255, 255, 0) 100%);*/
@@ -149,10 +157,7 @@ nav ul li{
 /*li{
 
 }*/
-.iconefleche{
-	border: 0px solid black;
-	color: #ad0bb2;
-}
+
 h2{
 	width: 1000px;
 	/*font-family: 'Dela Gothic One', cursive;*/
@@ -168,9 +173,10 @@ h2{
 	margin: 20vh auto 0px;
 }
 
-/*#hybride{
+#hybride{
+		margin: 20vh auto 0px;
 }
-
+/*
 #photographies{
 }
 */
@@ -186,9 +192,37 @@ h2{
 .projets figure{
 	width: 400px;
 	height: 500px;
+	position: relative;
+/*	border: 1px solid yellow;*/
 	/*background-color: green;*/ /*repère*/
+
 }
+
+.projets figure h3{
+	opacity: 0;
+		transition: 1s ease all;
+
+}
+
+.projets figure:hover h3{
+	opacity: 1;
+	color:white;
+	z-index: 1001;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top:0px;
+	line-height: 3em;
+	background-color: black;
+
+}
+
+.projets figure:hover img{
+	opacity: 0.5;
+}
+
 .projets figure img{
+		transition: 1s ease all;
 	width: 100%;
 	position: relative;
 	/*height: 500px;*/
@@ -211,7 +245,7 @@ h2{
 
 #aquarelles img{
 	left: -120px;
-	bottom: -100px;
+	bottom: 0px;
 	transform: rotate(-10deg);
 	/*border: 1px solid white;*/
 	z-index: 2;
